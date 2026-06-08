@@ -10,7 +10,7 @@ O sistema foi projetado para ser operado de forma ágil por agentes de viagens d
 
 ---
 
-## 👥 Estrutura da Equipe (4 Integrantes)
+## Estrutura da Equipe (4 Integrantes)
 Para otimizar o desenvolvimento na plataforma Salesforce e paralelizar as tarefas, o projeto está dividido em 4 frentes de trabalho claras:
 
 * **Dev 1: Data Architect & Security** (Foco em Modelagem de Dados, Perfis e Permissões)
@@ -46,7 +46,7 @@ Para otimizar o desenvolvimento na plataforma Salesforce e paralelizar as tarefa
   * Conceder ao perfil acesso completo (Visualização, Criação e Edição) para os objetos `Account` e `Check-In`.
   * Criar usuários de teste com este novo perfil para validação das entregas.
 
-### 🎨 Dev 2: Interface e Experiência do Usuário (UI/UX)
+### Dev 2: Interface e Experiência do Usuário (UI/UX)
 > **Objetivo:** Garantir um ambiente de trabalho limpo, focado e de alta produtividade para os agentes.
 
 * **Passo 1: Aplicativo Customizado 14-Bis**
@@ -60,7 +60,7 @@ Para otimizar o desenvolvimento na plataforma Salesforce e paralelizar as tarefa
 * **Passo 4: Criação de Check-In Facilitada**
   * Criar uma Ação Rápida (Quick Action) do tipo "Criar Registro" dentro do objeto `Account` para permitir que o agente crie um Check-In diretamente da tela do cliente.
 
-### 🛡️ Dev 3: Regras de Negócio e Validações
+###  Dev 3: Regras de Negócio e Validações
 > **Objetivo:** Proteger a integridade dos dados e impedir falhas operacionais humanas.
 
 * **Passo 1: Validação de CPF**
@@ -72,7 +72,7 @@ Para otimizar o desenvolvimento na plataforma Salesforce e paralelizar as tarefa
 * **Passo 4: Botão Operacional "Realizar Check-In"**
   * Criar um botão ou ação rápida no objeto `Check_In__c` que mude automaticamente o `Status__c` para `Realizado` e preencha o `Horario_Check_In__c` com o timestamp exato do momento da execução.
 
-### ⚙️ Dev 4: Automações e Inteligência
+###  Dev 4: Automações e Inteligência
 > **Objetivo:** Automatizar processos em segundo plano para otimizar o tempo e engajar clientes.
 
 * **Passo 1: Atualização Automática de Contadores na Conta**
