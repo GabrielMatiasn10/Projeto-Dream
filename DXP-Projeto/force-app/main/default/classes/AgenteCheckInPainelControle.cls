@@ -1,4 +1,4 @@
-public with sharing class AgenteCheckInPainelControle{
+public without sharing class AgenteCheckInPainelControle{
     // Buscar dados da conta.
     @AuraEnabled(cacheable=true)
     public static Account getDadosConta(Id contaId){
