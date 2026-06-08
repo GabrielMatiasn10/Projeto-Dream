@@ -3,7 +3,8 @@ private class CheckInHandlerTest {
     private static Account criarConta() {
         Account conta = new Account(
             Name = 'Cliente Teste',
-            CPF__c = '123.456.789-00'
+            CPF__c = '123.456.789-00',
+            Email__c = 'teste@teste.com'
         );
         insert conta;
         return conta;

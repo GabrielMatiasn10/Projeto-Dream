@@ -1,5 +1,5 @@
 public with sharing class CheckInHandler {
-    // Perfeito! Tiramos o parâmetro antigo que não estava em uso
+    
     public static void atualizarContadores(List<Check_In__c> novos) {
         // Coletar id das contas.
         Set<Id> contaIds = new Set<Id>();
@@ -17,7 +17,7 @@ public with sharing class CheckInHandler {
 
         // Total por conta.
         Map<Id, Integer> totalMap = new Map<Id, Integer>();
-        // CORREÇÃO: Adicionado o alias "contaId" no SELECT
+        
         for (AggregateResult ar : [ 
             SELECT Cliente__c contaId, COUNT(Id) total 
             FROM Check_In__c 
@@ -29,7 +29,7 @@ public with sharing class CheckInHandler {
 
         // Contagem de ano por conta.
         Map<Id, Integer> anoMap = new Map<Id, Integer>();
-        // CORREÇÃO: Adicionado o alias "contaId" no SELECT
+        
         for (AggregateResult ar : [ 
             SELECT Cliente__c contaId, COUNT(Id) total 
             FROM Check_In__c 
