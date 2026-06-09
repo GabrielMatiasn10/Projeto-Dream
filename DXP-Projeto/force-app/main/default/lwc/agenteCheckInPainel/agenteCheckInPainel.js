@@ -50,6 +50,11 @@ export default class AgenteCheckInPainel extends NavigationMixin(LightningElemen
             this.isLoading = false;
             this.errorMessage = undefined;
         } else if (error) {
+            if (this.resolvedContaId) {
+                this.errorMessage = 'Erro ao carregar dados do cliente. Verifique se o registro é uma Conta ou um Check-In válido.';
+            } else {
+                this.errorMessage = 'Nenhuma Conta associada encontrada para este registro.';
+            }
             this.errorMessage = 'Erro ao carregar dados do cliente.';
             this.isLoading = false;
         }
